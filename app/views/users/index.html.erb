@@ -4,12 +4,12 @@
 
 <h1>Users</h1>
 
-<table class="table" id="users"
+<table class="table table-hover mt-3" id="users"
   data-source="<%= users_path format: :json %>"
   data-controller="users"
   data-user-target="tbody">
   <thead>
-    <tr>
+    <tr class="table-secondary">
       <th>Id</th>
       <th>Name</th>
       <th>Balance</th>
@@ -19,4 +19,4 @@
   <tbody></tbody>
 </table>
 
-<%= link_to "New user", new_user_path %>
+<%= link_to "New user", new_user_path, class: "btn btn btn-outline-success" %>

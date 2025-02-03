@@ -5,7 +5,7 @@ export default class extends Controller {
   connect() {
     $('#users').dataTable({
       paging: false,
-      searching: false,
+      // searching: false,
       processing: true,
       serverSide: true,
       retrieve: true,
