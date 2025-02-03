@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Users" %>
+
+<h1>Users</h1>
+
+<table class="table" id="users"
+  data-source="<%= users_path format: :json %>"
+  data-controller="users"
+  data-user-target="tbody">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Balance</th>
+      <th>Active</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<%= link_to "New user", new_user_path %>

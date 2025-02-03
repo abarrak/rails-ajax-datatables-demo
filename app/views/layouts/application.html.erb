@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Ajax Datatables Demo" %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= content_for(:title) || "Demo Ajax Datatables" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -18,9 +18,12 @@
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
     <div class="container">
-      <%= yield %>
+      <header class="mt-3 mb-1 p-2 bg-light border border-secondary">DataGrid App</header>
+
+      <article class="p-3 bg-light border border-success">
+        <%= yield %>
+      </article>
     </div>
   </body>
 </html>
